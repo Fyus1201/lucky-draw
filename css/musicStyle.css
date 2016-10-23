@@ -1,0 +1,32 @@
+/* 大转盘样式 */
+.kePublic{
+    top: 15%;
+    height: 70%;
+    /*width: 70%;*/
+    left: 50%;
+    position: absolute;
+}
+.banner{
+    display:block;
+    width:95%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 20px;
+}
+.banner .turnplate{
+    display:block;
+
+    background: red;
+    width:100%;
+    position:relative;
+}
+.banner .turnplate canvas.item{
+    width:100%;
+}
+.banner .turnplate img.pointer{
+    position:absolute;
+    width:31.5%;
+    height:42.5%;
+    left:34.6%;
+    top:23%;
+}

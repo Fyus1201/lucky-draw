@@ -1,0 +1,82 @@
+/* 大转盘样式 */
+*{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.kePublic{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+
+    background: #7a13e1;
+}
+
+.banner{
+
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height:90%;
+    position:absolute;
+
+    background-image: url(../images/turnplate-bg.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-position:center;
+
+    /*background: blue;*/
+
+}
+
+.banner .pointer{
+
+    position:relative;
+    width:31.5%;
+    height:53.2%;
+    left:34.6%;
+    top:23.4%;
+
+    background-image: url(../images/turnplate-pointer0.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-position:center;
+
+
+}
+.banner .pointer .onpointer{
+
+    position:relative;
+    cursor: pointer;
+
+    -moz-border-radius: 500px;
+    -webkit-border-radius: 500px;
+    border-radius: 500px;
+    /*background: blue;*/
+}
+
+@media all and (orientation : landscape) {
+    /*横屏时*/
+    .banner canvas.item{
+        display: block;
+
+        height: 90%;
+        position: absolute;
+
+    }
+
+
+}
+
+@media all and (orientation : portrait){
+    /*竖屏时*/
+    .banner canvas.item{
+        display: block;
+        bottom: 0;
+        width: 90%;
+        position: absolute;
+    }
+
+
+}
